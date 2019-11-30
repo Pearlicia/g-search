@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GEO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+</head>
+<body>
+        <div id="fb-root"></div>
+        
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Geo</span>Search</h1>
+            </div>
+            <nav class="topnav" id="myTopnav">
+                <ul>
+                    <li id="hom" class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="about">About</a></li>
+                    
+                </ul>
+             </nav>
+        </div>
+    </header>
+
+
+    <section id="showcase">
+            <div class="container">
+                <h1>Search any of your Preferred Locations</h1>
+                <P>And also see the weather condition of your place of interest</P>
+            </div>
+    </section>
+
+    <section>
+        <div id="searchContainer">
+            <div class="container">
+                <h1>Search your place of Interest</h1>
+                <form action="#" id="form">
+                  <input type="text" class="searchControl" id="searchInput" data-city-search placeholder="Search...">
+                  <button type="submit" class="searchContol" id="searchBtn"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <section class="weather-detail">
+        <div class="containa">
+                <div class="header">
+                    <div class="icon-container">
+                        <div class="weather-icon">
+                            <img src="icons/unknown.png" alt="">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="content">
+                    <div class="general-information">
+                        <div class="temperature-description status">
+                            <p>-</p>
+                        </div>
+                        <div class="location"> <p>-</p> </div>
+                   </div>
+
+                    <div class="detail-section">
+                        <div class="detail">
+                            <div class="title">Wind</div>
+                            <div class="value" id="wind">TBD</div>
+                        </div>
+                         <div class="detail bordered">
+                            <div class="title">Humidity</div>
+                            <div class="value" id="humidity" >TBD</div>
+                            
+                        </div>
+                        
+                        <div class="detail">
+                            <div class="title">Temperature</div>
+                            <div class="temperature-value">
+                                 <p> 0<span>&#8451;</span></p>
+                            </div>
+                            
+                         </div>
+                    </div>
+                </div>
+          </section>
+
+   
+    
+     <!-- The slide-out panel for showing place details -->
+     <div id="panel"></div>
+
+     <!-- Map appears here -->
+       <div id="map"></div>
+            
+    
+        <footer>
+            <div class="fb-share-button" 
+                data-href="https://felicia-ebikon.netlify.com/" 
+                data-layout="button" data-size="large">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffelicia-ebikon.netlify.com%2F&amp;src=sdkpreparse" 
+                class="fb-xfbml-parse-ignore">Share</a>
+            </div>
+            <p>Lishia Inc. Copyright &copy; 2019</p>
+        </footer>
+        
+    
+
+    <script src="weather.js"></script>
+    <script src="map.js"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ZCZbX-eaWFL-V_vwMocKOUmrv0AVbF0&libraries=places&callback=initMap"></script> -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEZ3axh9EbB15N2SWE2UPpWjWAGU1eIdI&libraries=places&callback=initMap"></script>
+   
+    
+
+  
+</body>
+</html>
